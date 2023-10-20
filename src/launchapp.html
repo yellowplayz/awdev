@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./launchapp.css">
+    <link rel="icon" type="png" href="./favicon.png">
+    <title>Anime Watch v2</title>
+</head>
+<body>
+    <header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./home2.html">Home</a>
+            <a href="#">About</a>
+          </div>
+          
+        <div class="logo">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><ion-icon name="menu-outline" class="icon"></ion-icon></span>
+        </div>
+
+        <h3>Anime<br>watch v2</h3>
+
+        <form action="/search" autocomplete="off" onsubmit="return search()">
+            <input type="text" id="searchInput" class="form-control search-input" name="keyword" placeholder="Search anime...">
+        </form>
+        
+    </header>
+
+    <div class="form-box about">
+        <span class="icon-close-about">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <h2>About</h2>
+        <p>Watch Anime Online, Free Anime 0 ads!</p>
+        <p>---------------------------------</p>
+        <p>This is still in Development</p>
+        <p>---------------------------------</p>
+      </div>
+
+      <div id="blurDiv" class="blur-div"></div>
+
+    <script src="./launchapp.js"></script>
+    <script src="./aboutPopup.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</body>
+</html>
